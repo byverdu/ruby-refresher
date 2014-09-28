@@ -69,8 +69,24 @@ end
 ##
 
 def shortest_word_in_array(array)
-	
+	array.min{|a,b| a.length<=>b.length}
 end
+
+def longest_word_in_array(array)
+	array.max{|a,b| a.length<=>b.length}
+end
+
+def total_of_array(array)
+	array.inject(:+)
+end
+
+def double_array(array)
+	array = array.dup + array.clone
+end
+
+##
+
+
 
 
 

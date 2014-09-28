@@ -59,7 +59,7 @@ def separate_array_into_even_and_odd_numbers(array)
 	
 	array.each do |e| 
 
-		arr2 << e if e % 2 == 0 
+		arr2 << e if e.even?
 		arr1 << e if e % 2 != 0 
 	end
 	
@@ -86,7 +86,21 @@ end
 
 ##
 
+def turn_symbol_into_string(foobar)
+	:foobar.to_s
+end
 
+def average_of_array(array)
+	((array.inject(:+))/(array.length.to_f)).ceil
+end
+
+def get_elements_until_greater_than_five(array)
+	array.take_while { |n| n <= 5 }
+end
+
+def convert_array_to_a_hash(array)
+	Hash[*array]
+end
 
 
 

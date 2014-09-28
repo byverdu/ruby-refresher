@@ -28,7 +28,7 @@ describe 'the Friday test :)' do
     expect(n).to eq ['a', 'b', 'c']
   end
 
-  fit specify 'reverse_every_element_in_array' do
+  specify 'reverse_every_element_in_array' do
     n = reverse_every_element_in_array ['dog', 'monkey', 'elephant']
     expect(n).to eq ['god', 'yeknom', 'tnahpele']
   end
@@ -45,7 +45,7 @@ describe 'the Friday test :)' do
     expect(n).to eq [4, 5, 6, 7]
   end
 
-  specify 'add_element_to_beginning_of_array' do
+  fit specify 'add_element_to_beginning_of_array' do
     n = add_element_to_beginning_of_array [2, 3, 4, 5], 1
     expect(n).to eq [1, 2, 3, 4, 5]
   end

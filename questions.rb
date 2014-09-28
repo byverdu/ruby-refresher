@@ -124,6 +124,23 @@ end
 
 ##
 
+def round_up_number(number)
+	number.ceil
+end
+
+def round_down_number(number)
+	number.floor
+end
+
+def format_date_nicely(date)
+  date.strftime("%d/%m/%Y")
+end
+
+def get_domain_name_from_email_address(email)
+	email[/@(\w+)/, 1]
+end
+
+###
 
 
 
